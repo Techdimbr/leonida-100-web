@@ -1,0 +1,674 @@
+{
+  "meta": {
+    "lang": "en-US",
+    "version": "4.0-audited",
+    "updated": "2026-11-25",
+    "title": "Unofficial Tactical Guide — Leonida 100% & BuckMe Protocol",
+    "disclaimer": "Independent Unofficial Strategy Guide. Not affiliated with, sponsored by, or endorsed by Rockstar Games or Take-Two Interactive."
+  },
+  "story_chapters": [
+    {
+      "chapter": 1,
+      "name": "Chapter 1 — Leonida Keys (Key Lento)",
+      "missions": 22,
+      "critical_alert": "STOP before 'Recalibration' & 'Tourist Trap': pocket cash is already wiped when starting Recalibration, and Tourist Trap wipes Floor Stash, BuckMe Checking & your Ganado! Keep /bin/bash pocket cash (purchases under ,000 auto-pull from BuckMe), lock ,000 in Family Savings (grows to ,000), and spend spare cash on permanent guns/silencers/clothes.",
+      "key_unlocks": [
+        "Cop Scanner police radio app (Unwanted Attention)",
+        "Brian's Lockup mailbox payout unlocked (Hey, Arnold!)",
+        "Kenton's Scuba Diving gear (Island Dreams)",
+        "BuckMe Banking & Family Savings (Buck Me)"
+      ]
+    },
+    {
+      "chapter": 2,
+      "name": "Chapter 2 — Port Gellhorn (Kelly County)",
+      "missions": 11,
+      "critical_alert": "During Alvan West's 'Missing Tourists' chain, go SOLO to 'Return to the Trophy Room' — bringing your partner prevents the abduction and abruptly ends the mission.",
+      "key_unlocks": [
+        "Free Jason ↔ Lucia switching (D-Pad Right + R1/RB) & Shared Focus (L3+R3)",
+        "Slim Jim tool & tracker-free car fencing for Moses",
+        "Personal Garages unlocked (Mitchell Auto Center — $4,000 after Daily Driver)",
+        "Bret Vogel hunting decks (after Coffee Break) & 2 AM UFO Abduction (Starlet Motel)"
+      ]
+    },
+    {
+      "chapter": 3,
+      "name": "Chapter 3 — Vice City (Vice-Dale County)",
+      "missions": 26,
+      "critical_alert": "NEVER delegate loot sales to Lucia or Nico — tested drops prove a 58% to 66% payout cut ($45k drops to $17k). Complete timed 'Race Against Yago' immediately when it spawns.",
+      "key_unlocks": [
+        "Snap Gun silent lockpick (Yasmani's 3 Jewelry Jobs)",
+        "Dye Pack Jammer for marked bills (Credit Check)",
+        "Key Cloner & Randy's 22-Car VIP Wish List (Balsero)",
+        "2 Secret WAiNK Radios & 2002 Vice City PS2 Portal Easter Egg"
+      ]
+    },
+    {
+      "chapter": 4,
+      "name": "Chapter 4 — Major Heists & Supercars",
+      "missions": 25,
+      "critical_alert": "Right after 'Lawyer Up', play as Lucia near Hamlet so you don't miss the hourglass-timed 'Pick Up Shayna' side encounter.",
+      "key_unlocks": [
+        "Advanced (Red) Tracker removal at Pay 'n' Spray (Shoot a Promo + '64 Mamba GT)",
+        "Gruppe 6 Armored Van tips & $205,000 Open Bank Vaults (That's Where the Money Is...)"
+      ]
+    },
+    {
+      "chapter": 5,
+      "name": "Chapter 5 — Story Finale",
+      "missions": 7,
+      "critical_alert": "Jason and Lucia have separate Criminal Profiles (5 tiers: Professional → Hardened → Violent → Psycho → Irredeemable; check via Map → L1/LB → Jason & Lucia). Never drop to Irredeemable (irreversible; blocks surrendering & alters the ending). Cap Family Savings (M–M) before the finale.",
+      "key_unlocks": [
+        "Official Progress → Stats → 100% Completion tracker",
+        "Full Free-Roam with zero missable 100% requirements"
+      ]
+    }
+  ],
+  "family_savings_tiers": [
+    {
+      "tier": "Buckin' Broke",
+      "savings_goal": 5000,
+      "checking_cap": 15000,
+      "benefit": "Instant +$2,000 interest bonus in Ch. 1 ($7,000 total carried into Ch. 2)."
+    },
+    {
+      "tier": "BuckMe Dry",
+      "savings_goal": 10000,
+      "checking_cap": 100000,
+      "benefit": "Permanent 20% discount on all RydeMe rides."
+    },
+    {
+      "tier": "BuckMe Gold",
+      "savings_goal": 100000,
+      "checking_cap": 500000,
+      "benefit": "Permanent 20% discount on all 8 personal garages (saves $32,000)."
+    },
+    {
+      "tier": "BuckMe Black",
+      "savings_goal": 500000,
+      "checking_cap": 2000000,
+      "benefit": "Permanent 10% discount on all vehicle liveries."
+    },
+    {
+      "tier": "Rich as Buck / Buckin' Max",
+      "savings_goal": 1000000,
+      "checking_cap": 2000000,
+      "benefit": "Final savings milestone ($1M–$2M) tracked for the campaign ending."
+    }
+  ],
+  "fences": [
+    {
+      "id": "fence_jewelry",
+      "item": "Jewelry, Diamond Rings, Necklaces & Luxury Watches",
+      "buyer": "Yasmani",
+      "location": "Little Cuba / Capri (Ch. 3+)",
+      "price_range": "$4,700 – $25,000+",
+      "delegation_loss": "58%–66% cut (NEVER delegate to Lucia or Nico)",
+      "tip": "Finish all 3 Jewelry Jobs to unlock the Snap Gun and purple daily scores up to $50k."
+    },
+    {
+      "id": "fence_marked",
+      "item": "Marked Bills (Banks, Payday Loans & Vaults)",
+      "buyer": "Yasmani (Bill Processor)",
+      "location": "Capri / Vice City (after Credit Check)",
+      "price_range": "$10,000 – $205,000",
+      "delegation_loss": "58%–66% cut (deliver personally)",
+      "tip": "Requires Dye Pack Jammer. Use a van (14 duffel bags total) on the 5-Bank 25-min loop."
+    },
+    {
+      "id": "fence_narcotics",
+      "item": "Narcotics & Gang Stash (Cocaine Flamingos)",
+      "buyer": "Tyrone / Brian's Lockup",
+      "location": "Ch. 1 (Brian) • Ch. 3+ (Tyrone)",
+      "price_range": "$5,000 – $35,000+",
+      "delegation_loss": "Heavy pickup penalty",
+      "tip": "In Ch. 1, finish 'Hey, Arnold!' to release held Brian's Lockup funds into your mailbox."
+    },
+    {
+      "id": "fence_cars_basic",
+      "item": "Standard Street Cars (No Tracker)",
+      "buyer": "Moses",
+      "location": "Moses' Garage — Port Gellhorn (Ch. 2+)",
+      "price_range": "$1,000 – $20,000",
+      "delegation_loss": "Direct drop-off only",
+      "tip": "Always scan with WAiNK first. Use Slim Jim for silent entry. Cheap registration: $1,200."
+    },
+    {
+      "id": "fence_cars_vip",
+      "item": "Supercars & 22-Car VIP Wish List",
+      "buyer": "Randy Koslov",
+      "location": "Leonida Auto World — Balsero (Ch. 3+)",
+      "price_range": "$15,000 – $50,000+",
+      "delegation_loss": "Direct mint-condition drop-off",
+      "tip": "North Capri & Vespucci Island spawn high-end supercars with low security. Red trackers unlock Ch. 4."
+    },
+    {
+      "id": "fence_cards",
+      "item": "Collectible Cards (480 cards / 18 sets)",
+      "buyer": "Pawn Shops",
+      "location": "13 Pawn Shops across Leonida",
+      "price_range": "$20 – $1,000+ per card",
+      "delegation_loss": "No delegation",
+      "tip": "Complete 15 sets for 100% before selling off spares."
+    },
+    {
+      "id": "fence_underwater",
+      "item": "Underwater Treasure Sets (5 of 7 Sets for 100%)",
+      "buyer": "Kenton",
+      "location": "Key Lento Beach Shop (after Hey, Arnold!)",
+      "price_range": "$50,000 – $200,000 per set",
+      "delegation_loss": "No delegation",
+      "tip": "Zero police heat. If Kenton vanishes in Ch. 2, call Brian as Jason to bring him back sooner."
+    }
+  ],
+  "missables_alerts": [
+    {
+      "id": "miss_01",
+      "chapter": 1,
+      "severity": "critical",
+      "title": "Ch. 1 Meditation Spot with Lucia (Key Lento)",
+      "detail": "At Jason's Key Lento house, ACCEPT Lucia's meditation invite. Declining removes this spot forever (potential trophy risk for Positive Mental Attitude)."
+    },
+    {
+      "id": "miss_02",
+      "chapter": 1,
+      "severity": "critical",
+      "title": "Point of No Return: 'Recalibration' & 'Tourist Trap' Wipe",
+      "detail": "Pocket cash is already lost starting Recalibration, and Tourist Trap wipes Floor Stash, Checking & Ganado. Run with /bin/bash pocket cash, lock ,000 in Family Savings, and spend every spare dollar on permanent weapons/silencers/clothes."
+    },
+    {
+      "id": "miss_03",
+      "chapter": 1,
+      "severity": "warning",
+      "title": "Shirley's Chapter 1 Timed Side Jobs",
+      "detail": "'Get Shirley's Rum' (~$1,300 via parrot clue at Three Sheets Liquor) and 'Steal the Scooter' expire once you leave Chapter 1."
+    },
+    {
+      "id": "miss_04",
+      "chapter": 2,
+      "severity": "critical",
+      "title": "Alvan West — Go SOLO to Trophy Room",
+      "detail": "In 'Missing Person (Return to the Trophy Room)', arrive ALONE. Bringing your partner cancels the kidnapping and abruptly ends the quest."
+    },
+    {
+      "id": "miss_05",
+      "chapter": 3,
+      "severity": "warning",
+      "title": "Timed 'Race Against Yago' Event",
+      "detail": "After 'Join a Street Race' in Chapter 3, complete 'Race Against Yago' before advancing."
+    },
+    {
+      "id": "miss_06",
+      "chapter": 3,
+      "severity": "warning",
+      "title": "2002 Vice City Portal — Zero Fast Travel",
+      "detail": "After triggering Badger R&D Tower as Jason, NEVER fast travel or switch to Lucia until all 12 LPL switches are pulled (fly a helicopter!)."
+    },
+    {
+      "id": "miss_07",
+      "chapter": 4,
+      "severity": "warning",
+      "title": "Shayna Hourglass Event (Lucia Only)",
+      "detail": "After 'Lawyer Up' in Ch. 4, drive near Hamlet as Lucia to catch the hourglass-marked 'Pick Up Shayna' mission."
+    },
+    {
+      "id": "miss_08",
+      "chapter": 5,
+      "severity": "critical",
+      "title": "Irreversible 'Irredeemable' Criminal Profile",
+      "detail": "Jason & Lucia track separate 5-tier Criminal Profiles (Map → L1/LB → Jason & Lucia). 'Irredeemable' is permanent, disables surrendering to police, and affects the story ending."
+    }
+  ],
+  "checklist_100": [
+    {
+      "id": "c100_01",
+      "group": "historia",
+      "group_label": "Story & Missions",
+      "chapter": 5,
+      "weight": 50,
+      "target": "91 missions (5 chapters)",
+      "title": "Main Story Complete",
+      "tip": "Ch.1 (22) • Ch.2 (11) • Ch.3 (26) • Ch.4 (25) • Ch.5 (7). No mission replay at launch — rotate all 15 manual save slots!"
+    },
+    {
+      "id": "c100_02",
+      "group": "historia",
+      "group_label": "Story & Missions",
+      "chapter": 5,
+      "weight": 6,
+      "target": "100 optional tasks",
+      "title": "Optional Story & Side Tasks",
+      "tip": "Complete companion optional jobs plus the 8 eligible Strangers & Freaks chains."
+    },
+    {
+      "id": "c100_03",
+      "group": "crimes",
+      "group_label": "Crimes & Grinding",
+      "chapter": 3,
+      "weight": 3,
+      "target": "39 hideouts",
+      "title": "Illegal Operations (Gang Ops)",
+      "tip": "Only 19 show on the map — 20 are hidden. Loot EVERY valuable item in each hideout for credit!"
+    },
+    {
+      "id": "c100_04",
+      "group": "crimes",
+      "group_label": "Crimes & Grinding",
+      "chapter": 3,
+      "weight": 2,
+      "target": "22 banks",
+      "title": "Bank Robberies",
+      "tip": "Chain the 5-Bank 25-min van route (14 bags) using office safe codes instead of explosives."
+    },
+    {
+      "id": "c100_05",
+      "group": "crimes",
+      "group_label": "Crimes & Grinding",
+      "chapter": 3,
+      "weight": 2,
+      "target": "7 jobs",
+      "title": "Payday Loan Jobs",
+      "tip": "2 jobs unlock Nico's pickup service (still deliver personally to avoid the 60% cut)."
+    },
+    {
+      "id": "c100_06",
+      "group": "crimes",
+      "group_label": "Crimes & Grinding",
+      "chapter": 3,
+      "weight": 2,
+      "target": "34 of 35 stores",
+      "title": "Smash 'n' Grabs (Jewelry & Pawn)",
+      "tip": "20 Jewelry stores ($9k–$25k) + 13 Pawn shops ($1k–$12k). Unlock the Snap Gun first!"
+    },
+    {
+      "id": "c100_07",
+      "group": "crimes",
+      "group_label": "Crimes & Grinding",
+      "chapter": 2,
+      "weight": 2,
+      "target": "50 of 91 holdups",
+      "title": "Stick Ups (V4 Audited)",
+      "tip": "Knock these out steadily across convenience stores outside active Hot Areas."
+    },
+    {
+      "id": "c100_08",
+      "group": "crimes",
+      "group_label": "Crimes & Grinding",
+      "chapter": 4,
+      "weight": 2,
+      "target": "8 vaults",
+      "title": "Bank Vaults Hit",
+      "tip": "Late Ch. 4: tail Gruppe 6 armored vans to banks and slip into open vaults (up to $205k!)."
+    },
+    {
+      "id": "c100_09",
+      "group": "crimes",
+      "group_label": "Crimes & Grinding",
+      "chapter": 3,
+      "weight": 2,
+      "target": "$100,000 fenced",
+      "title": "Narcotics Fenced",
+      "tip": "Sell directly to Tyrone (Ch. 3+) or Brian's Lockup (clear Hey, Arnold! first)."
+    },
+    {
+      "id": "c100_10",
+      "group": "crimes",
+      "group_label": "Crimes & Grinding",
+      "chapter": 3,
+      "weight": 2,
+      "target": "$100,000 fenced",
+      "title": "Jewelry Fenced",
+      "tip": "Deliver personally to Yasmani in Capri — never delegate to Lucia."
+    },
+    {
+      "id": "c100_11",
+      "group": "crimes",
+      "group_label": "Crimes & Grinding",
+      "chapter": 3,
+      "weight": 2,
+      "target": "$250,000 fenced",
+      "title": "Marked Bills Fenced",
+      "tip": "V4 audited target: $250,000. Requires Dye Pack Jammer (Credit Check). Three 5-bank van runs easily clear this!"
+    },
+    {
+      "id": "c100_12",
+      "group": "crimes",
+      "group_label": "Crimes & Grinding",
+      "chapter": 3,
+      "weight": 2,
+      "target": "$200,000 fenced",
+      "title": "Vehicles Fenced",
+      "tip": "V4 audited target: $200,000. Moses (no tracker) + Randy Koslov (supercar farms in North Capri & Vespucci Island)."
+    },
+    {
+      "id": "c100_13",
+      "group": "colecionaveis",
+      "group_label": "Collectibles",
+      "chapter": 1,
+      "weight": 1,
+      "target": "5 of 7 sets",
+      "title": "Kenton's Treasure Sets",
+      "tip": "Starts at Key Lento beach after Hey, Arnold! Pays $50k–$200k per set with zero heat."
+    },
+    {
+      "id": "c100_14",
+      "group": "colecionaveis",
+      "group_label": "Collectibles",
+      "chapter": 1,
+      "weight": 1,
+      "target": "15 of 18 sets",
+      "title": "Collectible Card Sets",
+      "tip": "480 cards total across 18 sets. Run the North → South sweep to avoid backtracking."
+    },
+    {
+      "id": "c100_15",
+      "group": "colecionaveis",
+      "group_label": "Collectibles",
+      "chapter": 1,
+      "weight": 1,
+      "target": "100 of 112",
+      "title": "WAiNK Landmark Scans",
+      "tip": "Keep WAiNK phone notifications enabled (Hold D-Pad Up → R1 / RB)."
+    },
+    {
+      "id": "c100_16",
+      "group": "colecionaveis",
+      "group_label": "Collectibles",
+      "chapter": 1,
+      "weight": 1,
+      "target": "33 of 33",
+      "title": "Underwater Discoveries",
+      "tip": "Sweep alongside Kenton's scuba diving questline across the Keys & southern coast."
+    },
+    {
+      "id": "c100_17",
+      "group": "colecionaveis",
+      "group_label": "Collectibles",
+      "chapter": 1,
+      "weight": 1,
+      "target": "30 of 34",
+      "title": "Magazines, Books & Comics",
+      "tip": "Check Hamlet prison, roadside bars, motels, and safehouses."
+    },
+    {
+      "id": "c100_18",
+      "group": "colecionaveis",
+      "group_label": "Collectibles",
+      "chapter": 1,
+      "weight": 1,
+      "target": "15 of 18",
+      "title": "Meditation Spots",
+      "tip": "Accept Lucia's Ch. 1 invite and always invite your partner at every spot (tracked per character)."
+    },
+    {
+      "id": "c100_19",
+      "group": "colecionaveis",
+      "group_label": "Collectibles",
+      "chapter": 1,
+      "weight": 1,
+      "target": "100 of 125",
+      "title": "Cocaine Flamingos Destroyed",
+      "tip": "Black/white beak = collectible; yellow beak = decoration only!"
+    },
+    {
+      "id": "c100_20",
+      "group": "colecionaveis",
+      "group_label": "Collectibles",
+      "chapter": 3,
+      "weight": 1,
+      "target": "2 of 2 stations",
+      "title": "Unique Playlists (Secret Radios)",
+      "tip": "The Vault (1 red gas-mask poster) + The Sniper of La Perle (4 posters: TWA Tattoo, Drip Drops, Aunt Zola's, Jack of Hearts 2F)."
+    },
+    {
+      "id": "c100_21",
+      "group": "colecionaveis",
+      "group_label": "Collectibles",
+      "chapter": 2,
+      "weight": 1,
+      "target": "70 of 79",
+      "title": "Styles Discovered (Tattoos & Watches)",
+      "tip": "Luxury watches spawn inside Gang Operations; scan graffiti tags for tattoos."
+    },
+    {
+      "id": "c100_22",
+      "group": "atividades",
+      "group_label": "Activities & Trials",
+      "chapter": 3,
+      "weight": 1,
+      "target": "30 of 40",
+      "title": "Unique Races Won (Post-Launch Audited)",
+      "tip": "Audited total is 40 race locations (30 required for 100%, 20 for trophy)."
+    },
+    {
+      "id": "c100_23",
+      "group": "atividades",
+      "group_label": "Activities & Trials",
+      "chapter": 3,
+      "weight": 1,
+      "target": "10 of 13",
+      "title": "Race Challenges Gold Medals",
+      "tip": "Use an upgraded personal garage supercar at Gellhorn International Raceway."
+    },
+    {
+      "id": "c100_24",
+      "group": "atividades",
+      "group_label": "Activities & Trials",
+      "chapter": 1,
+      "weight": 1,
+      "target": "42 golds",
+      "title": "Shooting Range Gold Medals",
+      "tip": "Set Aim Assist to 4 and sensitivity to 5–6 for crisp 30 FPS target snaps."
+    },
+    {
+      "id": "c100_25",
+      "group": "atividades",
+      "group_label": "Activities & Trials",
+      "chapter": 2,
+      "weight": 1,
+      "target": "4 of 4 games",
+      "title": "Video Games / Arcade Beaten",
+      "tip": "Beat all 4 retro arcade cabinets across Leonida."
+    },
+    {
+      "id": "c100_26",
+      "group": "atividades",
+      "group_label": "Activities & Trials",
+      "chapter": 1,
+      "weight": 1,
+      "target": "5 of 7",
+      "title": "Pool Opponents Defeated",
+      "tip": "Found in bars across Port Gellhorn, Hamlet, and Vice City."
+    },
+    {
+      "id": "c100_27",
+      "group": "atividades",
+      "group_label": "Activities & Trials",
+      "chapter": 3,
+      "weight": 1,
+      "target": "2 of 3 courses",
+      "title": "Mini Golf Courses Played",
+      "tip": "V4 verified target: finish a round at 2 of the 3 Mini Golf locations in Leonida."
+    },
+    {
+      "id": "c100_28",
+      "group": "atividades",
+      "group_label": "Activities & Trials",
+      "chapter": 2,
+      "weight": 1,
+      "target": "90 of 100",
+      "title": "Basketball Hoops Scored",
+      "tip": "Street courts across Vice City and coastal neighborhoods."
+    },
+    {
+      "id": "c100_29",
+      "group": "atividades",
+      "group_label": "Activities & Trials",
+      "chapter": 3,
+      "weight": 1,
+      "target": "42 trials",
+      "title": "Top Fun Drone Time Trials",
+      "tip": "Feather throttle on tight gates — flagship shops in Washington Island & Capri."
+    },
+    {
+      "id": "c100_30",
+      "group": "atividades",
+      "group_label": "Activities & Trials",
+      "chapter": 2,
+      "weight": 1,
+      "target": "300 of 397",
+      "title": "Stunts Completed",
+      "tip": "Stack with Papa Audacity's 6-part AudaCity Stunts questline."
+    },
+    {
+      "id": "c100_31",
+      "group": "atividades",
+      "group_label": "Activities & Trials",
+      "chapter": 1,
+      "weight": 1,
+      "target": "70 of 80",
+      "title": "In-Game Challenges Completed",
+      "tip": "Example: spending over $5,000 on clothes clears the Well Dressed challenge."
+    },
+    {
+      "id": "c100_32",
+      "group": "atividades",
+      "group_label": "Activities & Trials",
+      "chapter": 2,
+      "weight": 1,
+      "target": "15 decks",
+      "title": "Bret's Target Decks (Hunting)",
+      "tip": "Unlocks after Ch. 2's Coffee Break. Deliver Pristine or Good pelts/animals."
+    },
+    {
+      "id": "c100_33",
+      "group": "compendio",
+      "group_label": "Compendium",
+      "chapter": 1,
+      "weight": 1,
+      "target": "200 of 277 base models",
+      "title": "Vehicles Discovered",
+      "tip": "V4 verified target: 200 of 277 Base Models (557 includes variants)."
+    },
+    {
+      "id": "c100_34",
+      "group": "compendio",
+      "group_label": "Compendium",
+      "chapter": 1,
+      "weight": 1,
+      "target": "50 of 66",
+      "title": "Weapons Discovered",
+      "tip": "Check all 24 Ammu-Nations (5 Expanded carry Snipers/Launchers) + free map weapons."
+    },
+    {
+      "id": "c100_35",
+      "group": "compendio",
+      "group_label": "Compendium",
+      "chapter": 1,
+      "weight": 1,
+      "target": "100 of 255 species",
+      "title": "Animals Discovered",
+      "tip": "Scan wildlife in Mount Kalaga, Grassrivers swamps, and underwater reefs."
+    }
+  ],
+  "strangers_freaks": [
+    {
+      "id": "sf_01",
+      "name": "Kirk (Skunk Ape / Mr. Mangrove)",
+      "trigger": "Read flyer at Skeeter's Bar (Hamlet) or Rusty Anchor (Key Lento)",
+      "reward": "$1,000 initial payout + 3-part night questline (Part 3 is Lucia-only)"
+    },
+    {
+      "id": "sf_02",
+      "name": "Kyle (McKittrick Farm / Red Hulk)",
+      "trigger": "Flyer at Starlet Motel (Kelly County)",
+      "reward": "Free chemicals (Negotiate → Pay Later → Give Collateral) + Stamina/Focus boosts + Legendary Shotgun + $10k"
+    },
+    {
+      "id": "sf_03",
+      "name": "Alvan West (Missing Tourists)",
+      "trigger": "Missing poster in Port Gellhorn (Ch. 2) + 3 clue photos",
+      "reward": "ALERT: Go SOLO to 'Return to the Trophy Room'!"
+    },
+    {
+      "id": "sf_04",
+      "name": "Yago (Street Racer)",
+      "trigger": "Join a Street Race in Salton after Dealer's Choice (Ch. 3, Jason)",
+      "reward": "Unlocks street races. 'Race Against Yago' is timed!"
+    },
+    {
+      "id": "sf_05",
+      "name": "Papa Audacity",
+      "trigger": "6-part stunt chain (The Unknown Stuntman → The Audacity)",
+      "reward": "AudaCity Stunts events & massive Stunt progress."
+    },
+    {
+      "id": "sf_06",
+      "name": "Pilot Pete",
+      "trigger": "The Last Mile + 3 air drops (Pete's Deliveries)",
+      "reward": "Delivery missions exclusive to Jason."
+    },
+    {
+      "id": "sf_07",
+      "name": "Dr. Merle (No Flushers)",
+      "trigger": "Scan QR poster inside Corsair Key public restroom (WAiNK)",
+      "reward": "The Final Flush quest + permanent Max Stamina boost."
+    },
+    {
+      "id": "sf_08",
+      "name": "Freddie",
+      "trigger": "Retest Freddie's Defenses in free-roam",
+      "reward": "Completes the exact 8 eligible chains for the S&F trophy."
+    }
+  ],
+  "secrets_highlights": [
+    {
+      "id": "sec_01",
+      "name": "2002 Vice City PS2 Portal",
+      "location": "Badger R&D Tower → 12 LPL Substations → Turtle Head Reactor 2 (19:00–06:00)",
+      "reward": "Tommy Vercetti Hawaiian Shirt (Jason & Lucia) + Classic Bike (Jason-only, zero fast travel!)"
+    },
+    {
+      "id": "sec_02",
+      "name": "UFO Abduction + Grassrivers Alien Lab",
+      "location": "NW of Starlet Motel (2 AM, solo) → Fenced South Grassrivers Complex",
+      "reward": "'The Truth Is Out There' trophy + PERMANENT Health, Stamina & Focus buff"
+    },
+    {
+      "id": "sec_03",
+      "name": "Mario & Luigi Caps (J & L)",
+      "location": "Stone ruins south of Moreau (North of Mount Kalaga)",
+      "reward": "Hit the bong on the purple tarp to reveal the invisible '?' block & drop both caps"
+    },
+    {
+      "id": "sec_04",
+      "name": "Arthur Morgan's Hat (RDR2)",
+      "location": "Balloon-marked yard sale on Orchard Ave (south of Moses' Garage)",
+      "reward": "Genuine Cowboy Hat for $35 sitting on a guitar case"
+    },
+    {
+      "id": "sec_05",
+      "name": "Paul Walker's Green Eclipse",
+      "location": "Mansion garage on Vespucci Island (bridge from Catalan Island)",
+      "reward": "Unique tuned coupe you can hotwire & register permanently"
+    },
+    {
+      "id": "sec_06",
+      "name": "Cool Dog (Jet Ski Rescue)",
+      "location": "Swim away from your boat in Gambit Bay (Leonida Keys)",
+      "reward": "Ride to Dog Island + $1,218 wallet + exclusive sunglasses"
+    },
+    {
+      "id": "sec_07",
+      "name": "Dexter's Apartment & Kill Kit",
+      "location": "Trinity Apartments, Washington Island (Vice Beach)",
+      "reward": "Slice of Life boat at the pier + rooftop toolbox Kill Kit"
+    },
+    {
+      "id": "sec_08",
+      "name": "Monument of Leonidan Supremacy",
+      "location": "Manifest Canyon, north of Port Gellhorn (SR-73)",
+      "reward": "[ACTIVE MYSTERY] Haptic vibration + Morse beeps (solvable Morse puzzle confirmed in Tenebrae Lux)"
+    }
+  ]
+}

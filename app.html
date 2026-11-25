@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Leonida 100% — Web App Checklist &amp; Calculadora Lucro/Hora (PWA)</title>
+  <meta name="description" content="Web App PWA Offline de segunda tela: Checklist 100% ponderado, Calculadora de Lucro/Hora BuckMe, Buscador de Receptadores em 1 segundo e Radar de Perdíveis." />
+  <meta name="theme-color" content="#090C12" />
+  <link rel="manifest" href="./manifest.json" />
+  <link rel="icon" type="image/png" href="./icons/icon-192.png" />
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body class="app-body">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="./index.html" class="brand">
+        <span class="brand-mark" aria-hidden="true">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+            <polygon points="12,2 22,12 12,22 2,12" fill="#E11D48" />
+            <polygon points="12,7 17,12 12,17 7,12" fill="#F59E0B" />
+          </svg>
+        </span>
+        <span>
+          <span data-i18n="app_title">Companheiro Tático 100%</span>
+          <span class="brand-tag" data-i18n="brand_sub">Guia Tático Não Oficial</span>
+        </span>
+      </a>
+
+      <div class="nav-actions">
+        <button id="btn-pwa-install" type="button" class="btn btn-emerald btn-sm" style="display:none;" data-i18n="app_install">Instalar App</button>
+        <div class="lang-switch" role="group" aria-label="Language selector">
+          <button type="button" class="lang-btn" data-lang="pt-BR">PT</button>
+          <button type="button" class="lang-btn" data-lang="en-US">EN</button>
+        </div>
+        <a href="./index.html" class="btn btn-secondary btn-sm" data-i18n="app_back">Página Inicial</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- WEIGHTED 100% PROGRESS BAR -->
+  <section class="app-sticky-status" aria-label="100% Completion Progress">
+    <div class="container">
+      <div class="progress-header">
+        <div>
+          <div style="font-size:0.78rem; font-weight:800; text-transform:uppercase; letter-spacing:0.08em; color:var(--text-muted);" data-i18n="app_progress_lbl">Progresso Oficial "A Long Road"</div>
+          <div style="font-size:0.86rem; color:var(--text-secondary);">
+            <span id="progress-count" class="mono">0 / 35</span>
+            <span data-i18n="app_items_done">metas concluídas</span>
+          </div>
+        </div>
+        <div id="progress-pct" class="progress-pct mono">0%</div>
+      </div>
+      <div class="progress-track">
+        <div id="progress-fill" class="progress-fill"></div>
+      </div>
+    </div>
+  </section>
+
+  <main class="container">
+    <!-- APP TABS -->
+    <nav class="app-tabs" role="tablist" aria-label="Companion modules">
+      <button type="button" class="tab-btn active" data-tab="checklist" role="tab" data-i18n="tab_checklist">Checklist 100%</button>
+      <button type="button" class="tab-btn" data-tab="calc" role="tab" data-i18n="tab_calc">Calculadora $/h</button>
+      <button type="button" class="tab-btn" data-tab="fences" role="tab" data-i18n="tab_fences">Receptadores (1s)</button>
+      <button type="button" class="tab-btn" data-tab="alerts" role="tab" data-i18n="tab_alerts">Alertas &amp; Segredos</button>
+    </nav>
+
+    <!-- PANEL 1: CHECKLIST 100% -->
+    <section id="panel-checklist" class="tab-panel active" aria-label="100% Weighted Checklist">
+      <div class="toolbar">
+        <input id="checklist-search" type="search" class="input-field" data-i18n-placeholder="search_placeholder" placeholder="Buscar meta, colecionável ou dica..." />
+        <select id="status-filter" class="select-field" aria-label="Status filter">
+          <option value="all" data-i18n="filter_all">Todos</option>
+          <option value="pending" data-i18n="filter_pending">Pendentes</option>
+          <option value="done" data-i18n="filter_done">Concluídos</option>
+        </select>
+      </div>
+
+      <div id="group-pills" class="filter-pills"></div>
+      <div id="checklist-container" class="check-list"></div>
+
+      <div class="backup-bar">
+        <button id="btn-export-json" type="button" class="btn btn-secondary btn-sm" data-i18n="btn_export">Exportar Backup JSON</button>
+        <button id="btn-import-json" type="button" class="btn btn-secondary btn-sm" data-i18n="btn_import">Importar JSON</button>
+        <input id="import-file-input" type="file" accept="application/json" style="display:none;" />
+        <button id="btn-reset-progress" type="button" class="btn btn-secondary btn-sm" style="margin-left:auto; color:#FB7185;" data-i18n="btn_reset">Zerar Progresso</button>
+      </div>
+    </section>
+
+    <!-- PANEL 2: PROFIT / HOUR CALCULATOR -->
+    <section id="panel-calc" class="tab-panel" aria-label="Profit per Hour Calculator">
+      <div class="calc-controls">
+        <div class="field-group">
+          <label for="calc-chapter" data-i18n="calc_ch_lbl">Seu Capítulo Atual</label>
+          <select id="calc-chapter" class="select-field">
+            <option value="1">1 — Leonida Keys</option>
+            <option value="2">2 — Port Gellhorn</option>
+            <option value="3" selected>3 — Vice City</option>
+            <option value="4">4 — Major Heists / Endgame</option>
+            <option value="5">5 — Post-Game Free Roam</option>
+          </select>
+        </div>
+
+        <div class="field-group">
+          <label for="calc-minutes" data-i18n="calc_time_lbl">Tempo Disponível na Sessão</label>
+          <select id="calc-minutes" class="select-field">
+            <option value="15">15 min</option>
+            <option value="30">30 min</option>
+            <option value="60" selected>60 min (1h)</option>
+            <option value="120">120 min (2h)</option>
+            <option value="180">180 min (3h)</option>
+          </select>
+        </div>
+
+        <div class="field-group">
+          <label for="calc-mode" data-i18n="calc_mode_lbl">Modo de Entrega do Saque</label>
+          <select id="calc-mode" class="select-field">
+            <option value="direct" data-i18n="calc_mode_direct">Entregar Pessoalmente (100% Lucro)</option>
+            <option value="delegate" data-i18n="calc_mode_delegate">Delegar à Lucia / Nico (-62% Perda!)</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="calc-summary">
+        <div>
+          <div style="font-size:0.74rem; color:var(--text-muted); font-weight:800; text-transform:uppercase;" data-i18n="calc_best_lbl">Melhor Rota p/ Seu Capítulo</div>
+          <div id="calc-best-name" style="font-size:1rem; font-weight:800; margin-top:4px;">—</div>
+        </div>
+        <div>
+          <div style="font-size:0.74rem; color:var(--text-muted); font-weight:800; text-transform:uppercase;" data-i18n="calc_est_lbl">Ganho Estimado na Sessão</div>
+          <div id="calc-est-val" class="mono" style="font-size:1.3rem; font-weight:900; color:var(--emerald); margin-top:4px;">$0</div>
+        </div>
+        <div>
+          <div style="font-size:0.74rem; color:var(--text-muted); font-weight:800; text-transform:uppercase;" data-i18n="calc_loss_lbl">Dinheiro Perdido por Delegar</div>
+          <div id="calc-loss-val" class="mono" style="font-size:1.3rem; font-weight:900; color:var(--emerald); margin-top:4px;">$0</div>
+        </div>
+      </div>
+
+      <div class="alert-card critical" style="margin-bottom:16px;">
+        <p id="calc-delegation-note" style="font-size:0.86rem; color:var(--text-secondary);"></p>
+      </div>
+
+      <div id="calc-routes" class="check-list"></div>
+    </section>
+
+    <!-- PANEL 3: FENCE FINDER (1 SECOND) -->
+    <section id="panel-fences" class="tab-panel" aria-label="1-Second Fence Finder">
+      <div class="toolbar">
+        <input id="fence-search" type="search" class="input-field" data-i18n-placeholder="fence_search_placeholder" placeholder="Digite o item roubado (ex: joia, carro, nota, droga)..." />
+      </div>
+
+      <div id="fences-container" class="grid-2" style="margin-bottom:24px;"></div>
+
+      <h2 style="font-size:1.15rem; margin-bottom:12px;" data-i18n="savings_h">Escalões da Poupança Family Savings (Buck Yourself)</h2>
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Tier</th>
+              <th>Savings</th>
+              <th>Checking Cap</th>
+              <th>Bonus</th>
+            </tr>
+          </thead>
+          <tbody id="savings-tiers-body"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- PANEL 4: MISSABLES, S&F & SECRETS -->
+    <section id="panel-alerts" class="tab-panel" aria-label="Missables and Secrets">
+      <h2 style="font-size:1.15rem; margin-bottom:12px;" data-i18n="alerts_missables_h">Radar de Perdíveis &amp; Pontos Sem Retorno</h2>
+      <div id="missables-container" class="check-list" style="margin-bottom:28px;"></div>
+
+      <h2 style="font-size:1.15rem; margin-bottom:12px;" data-i18n="alerts_sf_h">As 8 Cadeias Elegíveis de Strangers &amp; Freaks</h2>
+      <div id="sf-container" class="grid-2" style="margin-bottom:28px;"></div>
+
+      <h2 style="font-size:1.15rem; margin-bottom:12px;" data-i18n="alerts_secrets_h">Maiores Segredos &amp; Recompensas Permanentes</h2>
+      <div id="secrets-container" class="grid-2"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="disclaimer-box" data-i18n="disclaimer_text">
+        AVISO LEGAL (DISCLAIMER): Este produto é um Guia Estratégico Não Oficial e independente, produzido pela Techdim Editorial para fins educacionais e de entretenimento.
+      </div>
+    </div>
+  </footer>
+
+  <script src="./js/i18n.js"></script>
+  <script src="./js/app.js"></script>
+</body>
+</html>

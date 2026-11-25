@@ -1,0 +1,26 @@
+{
+  "name": "Leonida Tactical Companion — Unofficial 100% Tracker",
+  "short_name": "Leonida 100%",
+  "description": "Offline-first 100% weighted checklist, BuckMe Profit/Hour calculator, fence finder, and missable alerts companion app.",
+  "start_url": "./app.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#090C12",
+  "theme_color": "#090C12",
+  "categories": ["games", "utilities"],
+  "icons": [
+    {
+      "src": "./icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
